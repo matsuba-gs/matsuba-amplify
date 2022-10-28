@@ -23,6 +23,11 @@
       "StackName": "amplify-matsubaamplify-dev-114119",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:454930157265:stack/amplify-matsubaamplify-dev-114119/05420bd0-566a-11ed-b4a4-069ab40467ed",
       "AmplifyAppId": "d38pjj709ulkb8"
+    },
+    "categories": {
+      "auth": {
+        "matsubaamplify68020bcd": {}
+      }
     }
   }
 }
