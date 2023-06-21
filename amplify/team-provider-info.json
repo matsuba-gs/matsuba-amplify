@@ -1,33 +1,15 @@
 {
-  "staging": {
+  "sampledev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyf46a2a1641f24-staging-15240-authRole",
-      "UnauthRoleArn": "arn:aws:iam::454930157265:role/amplify-amplifyf46a2a1641f24-staging-15240-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::454930157265:role/amplify-amplifyf46a2a1641f24-staging-15240-authRole",
+      "AuthRoleName": "amplify-matsubaamplify-sampledev-114542-authRole",
+      "UnauthRoleArn": "arn:aws:iam::835492162972:role/amplify-matsubaamplify-sampledev-114542-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::835492162972:role/amplify-matsubaamplify-sampledev-114542-authRole",
       "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-amplifyf46a2a1641f24-staging-15240-deployment",
-      "UnauthRoleName": "amplify-amplifyf46a2a1641f24-staging-15240-unauthRole",
-      "StackName": "amplify-amplifyf46a2a1641f24-staging-15240",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:454930157265:stack/amplify-amplifyf46a2a1641f24-staging-15240/34da82c0-5663-11ed-bfd2-0ad05a3eef33",
-      "AmplifyAppId": "d38pjj709ulkb8"
-    },
-    "categories": {
-      "auth": {
-        "matsubaamplify68020bcd": {}
-      }
-    }
-  },
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-matsubaamplify-dev-114119-authRole",
-      "UnauthRoleArn": "arn:aws:iam::454930157265:role/amplify-matsubaamplify-dev-114119-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::454930157265:role/amplify-matsubaamplify-dev-114119-authRole",
-      "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-matsubaamplify-dev-114119-deployment",
-      "UnauthRoleName": "amplify-matsubaamplify-dev-114119-unauthRole",
-      "StackName": "amplify-matsubaamplify-dev-114119",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:454930157265:stack/amplify-matsubaamplify-dev-114119/05420bd0-566a-11ed-b4a4-069ab40467ed",
-      "AmplifyAppId": "d38pjj709ulkb8"
+      "DeploymentBucketName": "amplify-matsubaamplify-sampledev-114542-deployment",
+      "UnauthRoleName": "amplify-matsubaamplify-sampledev-114542-unauthRole",
+      "StackName": "amplify-matsubaamplify-sampledev-114542",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:835492162972:stack/amplify-matsubaamplify-sampledev-114542/b7bd7560-0fdd-11ee-a9da-0a79541ba54b",
+      "AmplifyAppId": "d15u37nqoc5y70"
     },
     "categories": {
       "auth": {

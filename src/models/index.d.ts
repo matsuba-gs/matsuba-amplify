@@ -1,12 +1,16 @@
-import { ModelInit, MutableModel } from "@aws-amplify/datastore";
+import { ModelInit, MutableModel, __modelMeta__, ManagedIdentifier } from "@aws-amplify/datastore";
 // @ts-ignore
 import { LazyLoading, LazyLoadingDisabled } from "@aws-amplify/datastore";
 
-type NoteMetaData = {
-  readOnlyFields: 'createdAt' | 'updatedAt';
-}
+
+
+
 
 type EagerNote = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Note, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
   readonly id: string;
   readonly name: string;
   readonly description?: string | null;
@@ -16,6 +20,10 @@ type EagerNote = {
 }
 
 type LazyNote = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Note, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
   readonly id: string;
   readonly name: string;
   readonly description?: string | null;
@@ -26,6 +34,6 @@ type LazyNote = {
 
 export declare type Note = LazyLoading extends LazyLoadingDisabled ? EagerNote : LazyNote
 
-export declare const Note: (new (init: ModelInit<Note, NoteMetaData>) => Note) & {
-  copyOf(source: Note, mutator: (draft: MutableModel<Note, NoteMetaData>) => MutableModel<Note, NoteMetaData> | void): Note;
+export declare const Note: (new (init: ModelInit<Note>) => Note) & {
+  copyOf(source: Note, mutator: (draft: MutableModel<Note>) => MutableModel<Note> | void): Note;
 }
